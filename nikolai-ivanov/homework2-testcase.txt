@@ -1,0 +1,60 @@
+
+URL:1
+
+Title: Can create user with name use only space in search bar  / create user with not valid credentials
+Priority: 2
+Component: Login/Register
+Description/Purpose: To check that not valid user can login successfully
+Steps:
+1.Navigate to Users click Groups click +Add | search bar for add load 
+2.Click on search bar type only with space click save | receive error "unable to add the data"
+3.Click back | page Groups with user name and id load
+4.Select empty name and click trash bin in right| data Name has been deleted
+5.Curentlly we are in Groups page click +Add| search bar for add Name load
+6.Click on search bar type only with space click save| the data has been saved
+7.Click  button back | page loadet again Groups | the data with empty name was created 
+
+
+
+_________________________________________________________________________________________________________________
+URL2:
+
+Title: From page "Structure setup" ,"Locations" system can accept  Name and part of script/create name with not valid name 
+Priority: 1
+Component: Data creat/Register
+Description/Purpose:  To check  can creat succesufull with name and script|. 
+Steps:
+1.Going Users , click Groups | Name search bar loaded
+2.Click on search bar type name with script "<b>Alex</b>" click save | Unable to add the data from this page
+3.Click again Name search bar delet name with backspace button  | name was deleted 
+4.Click back  return to page | Users , Groups
+5.Click Structures setup dropdown select and click Locations| location page load
+6.Click button Add open Name search bar type name with script on search bar  click save| the name was created succesefull 
+7.Click to Locations check the name is was created| name was created you can se only name with out par of script 
+
+______________________________________________________________________________________________________________________________________
+URL3:
+Title: Can change  size of rows in UI  when applying more Scanners  rows change to not standart 
+Priority :2
+Component: add info | modification 
+Description/Purpose: can  change UI when we add more details in one cell and using space between text.
+Steps:
+1.Going page  , click Pragmatic, click Location, click Index| index page loaded 
+2.Click scanner | scanner open 
+3.Add  5 scanners styles |scanners was added 
+4.Click save | system save scanners and rows change size .
+__________________________________________________________________________________________________________________________________________
+URL4:
+
+Title: Can add succesefull   users with same names and URL.
+Priority:3
+Component:Login / Registration 
+Description/Purpose : can create  more then one user with same credential  (name , url) and save it.
+Steps:
+1. Open Pragmatic2 then click   Configuration  then click Add| Page with edit load 
+2.Type name:test . url: http://pragmatic.bg click save| the data was saved
+3.Repeat click again Save | the data was saved
+4.Click  back  | page with  created data  is there
+5.Click add   again for name type:test and for url: http://pragmatic.bg click save| data has been saved
+6.Click back  check two data with same credential was creted suceesefull 
+7.Click on top right search bar na try to search data by name:test| system located two data.
