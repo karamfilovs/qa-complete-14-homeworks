@@ -1,0 +1,154 @@
+
+----------------------------------------------------------------------------------
+1. Open the urls in the browser(make sure you have flash player). 
+Find the problem and describe it inside text file. 
+Some videos may contain more than one bug ;) 
+----------------------------------------------------------------------------------
+
+Video 1 - https://www.screencast.com/t/yBLoNWKi
+Title: Users group without name (empty name) is registered in users submenu.
+Severity: 3
+Priority:2
+Environment: Chrome, Firefox, Opera
+Expected Result: Error message is displayed  “Unable to add the data” when we try to enter invalid name for new group.
+Actual Result: There is registered new users group with empty name.
+Steps to reproduce:
+1. Go to IDENTYSOFT admin panel | There is presented the main page.
+2. Click on “Users” tab | And it is opened the submenu.
+3. Click on “Groups” button | Loaded the page with all groups.
+4. Click on “Add” button | It is loaded the page for creating a new users group.
+5. Insert 7 intervals into the field “Name” | The field accepted all symbols.
+6. Click on the button “Save” | The new users group is accepted and its displayed the message “The data has been saved”
+
+
+
+Video 2 - https://www.screencast.com/t/hlfRIQoqLY2L
+Title: Location is registered with forbidden characters.
+Severity:3
+Priority:2
+Environment: Chrome, Firefox, Opera
+Expected Result: Error message is displayed: “Name can contain only lowercase/uppercase letters, -, _, : or space characters” when we try to enter invalid name for new location.
+Actual Result:
+Steps to reproduce:
+1. Go to IDENTYSOFT admin panel | There is presented the main page.
+2. Click on “Structures setup” tab | And it is opened the submenu.
+3. Click on “Locations” button | Loaded the page with all locations.
+4. Click on “Add” button | It is loaded the page for creating a new location.
+5. Insert the text “<b> Alex” into the field “Name” | The field accepted all symbols.
+6. Click on the button “Save” | The new location is accepted and its displayed the message “The data has been saved”
+
+
+Picture 1 - https://www.screencast.com/t/2hgdoBaM5c
+Title: The column “Name” from Locations submenu has unlimited symbols and displace the columns behind.
+Severity: 3
+Priority:2
+Environment: Chrome, Firefox, Opera
+Expected Result: All columns to be fitted in browser screen.
+Actual Result: Some of the columns are outside visible area.
+Steps to reproduce:
+1. Go to IDENTYSOFT admin panel | There is presented the main page.
+2. Click on “Structures setup” tab | And it is opened the submenu.
+3. Click on “Locations” button | Loaded the page with all locations.
+4. Click on “Add” button | It is loaded the page for creating a new location.
+5. Insert the text “VeryLongVeryLongVeryLongVeryLongVeryLongVeryLong” into the field “Name” | The field accepted all symbols.
+6. Click on “Locations” button | Loaded the page with all locations.
+
+
+Video 3 - https://www.screencast.com/t/pDv6Qj4o5Ihl
+Title: Allowed duplicate records in “Configuration” submenu.
+Severity: 2
+Priority: 1
+Environment: Chrome, Firefox, Opera
+Expected Result: Error message is displayed when we try to enter existing record.
+Actual Result: The duplicate record is accepted.
+Steps to reproduce:
+1. Go to IDENTYSOFT admin panel | There is presented the main page.
+2. Click on “Camera” tab | And it is opened the submenu.
+3. Click on “Configuration” button | It is opened the tab with all configurations.
+4. Click on “Add” button | It is loaded the page for creating a new configuration.
+5. Fill the fields: name with “test” and Url with http://pragmatic.bg and click “Save” button | the new configuration is accepted.
+6. Click on “Back” button | There is displayed the tab with the new configuration.
+7. Click on “Add” button | It is loaded the page for creating a new configuration.
+8. Fill the fields: name with “test” and Url with http://pragmatic.bg and click “Save” button | the new configuration is accepted.
+9. Click on “Back” button | There is displayed the tab with the duplicated configurations.
+
+
+----------------------------------------------------------------------------------
+2. Start Petclinic application
+Find at least 3 bugs and describe them using the above template/example
+http://localhost:9966/petclinic/
+----------------------------------------------------------------------------------
+
+Bug - 1
+Title: Can be added animal with future birth date.
+Severity: 2
+Priority:1
+Environment: Chrome
+Expected Result: You can’t add new animal with future birth date.
+Actual Result: You have been added new animal with future birth date.
+
+Steps to reproduce:
+1. Open http://localhost:9966/petclinic/ | The home page is loaded.
+2. Click on button “Find owners” | The owners search page is displayed.
+3. Click on button “Add owner” | The page for registering a new owner is shown.
+4. Fill the fields with the data:
+First name: dani
+Last name: mitev
+Address: Sofia
+City: Sofia
+Telephone: 0123456789
+and click the button “Add owner” | The owner registration is successful.
+5. Click on the button “Add new pet” | The page for new pet is displayed.
+6. In the field “Name” type Simo. | The name is accepted.
+7. From the field “Birth Date” choose current date + 5 days | The date is accepted.
+8. From the filed type choose “bird” | The pet type is accepted.
+9. Press the button “Add pet” | Owner and pet information page is displayed.
+
+
+Bug - 2
+Title: Can be added owners with duplicating names.
+Severity: 2
+Priority:1
+Environment: Chrome
+Expected Result: To be denied registering a new user with the same names.
+Actual Result: You are allowed to register a new user with the same names.
+
+Steps to reproduce:
+1. Open http://localhost:9966/petclinic/ | The home page is loaded.
+2. Click on button “Find owners” | The owners search page is displayed.
+3. Click on button “Add owner” | The page for registering a new owner is shown.
+4. Fill the fields with the data:
+First name: dani
+Last name: mitev
+Address: Sofia
+City: Sofia
+Telephone: 0123456789
+and click the button “Add owner” | The owner registration is successful.
+5. Click on the button “Add new pet” | The page for new pet is displayed.
+6. In the field “Name” type Simo. | The name is accepted.
+7. From the field “Birth Date” choose current date + 5 days | The date is accepted.
+8. From the filed type choose “bird” | The pet type is accepted.
+9. Press the button “Add pet” | Owner and pet information page is displayed.
+10. Do the steps from point 1 to point 9 again. | And your profile was accepted again.
+
+
+Bug - 3
+Title: You can add Owner name which includes numbers.
+Severity: 2
+Priority:1
+Environment: Chrome
+Expected Result: To be denied adding names with numbers.
+Actual Result: You can add any name with numbers.
+
+Steps to reproduce:
+1. Open http://localhost:9966/petclinic/ | The home page is loaded.
+2. Click on button “Find owners” | The owners search page is displayed.
+3. Click on button “Add owner” | The page for registering a new owner is shown.
+4. Fill the fields with the data:
+First name: dani9
+Last name: mitev9
+Address: Sofia
+City: Sofia
+Telephone: 0123456789
+and click the button “Add owner” | The owner registration is successful.
+
