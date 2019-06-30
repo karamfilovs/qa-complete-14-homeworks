@@ -1,0 +1,63 @@
+Test Case#1
+Test Name: Can't create user with only spaces for a name.
+Priority: 3
+Component: Add User
+Description: To verify user can't be created with only spaces for a name.
+Steps:
+1. Log into Identysoft. | A Welcome message is displayed on the right.
+2. Click on Users->Groups from the menu on the right.| A list of users is visible.
+3. Click on the "+Add".| A field for entering Name appears.
+4. Use only spaces to create a new user.
+5. Click "Save". | An error message "Unable to add the data." appears and the user is not created.
+
+Test Case#2
+Test Name: Can't create user using html tags in the name.
+Priority: 1
+Component: Add User
+Description: To verify user can't be created using html tags in the name.
+Steps:
+1. Log into Identysoft. | A Welcome message is displayed on the right.
+2. Click on Users->Groups from the menu on the right.| A list of users is visible.
+3. Click on the "+Add" butten in blue. | A field for entering Name appears.
+4. Type a name in the field using html tags for bolding.
+5. Click "Save". | An error message "Unable to add the data" appears.| A message "Name can contain inly lowercase/uppercase letters,=,_,: or space characters " in red letters appearsuder the field for Name.
+
+Test Case#3
+Test Name: Can't create location data using html tags in the name.
+Priority: 1
+Component: Add Location
+Description: To verify location can't be created using html tags in the name.
+Steps:
+1. Log into Identysoft. | A Welcome message is displayed on the right.
+2. Click on Structure setup->Locations from the menu on the right.| A list of users is visible.
+3. Click on the "+Add".| A field for entering Name appears.
+4. Type a name in the field using opening html tag for bolding. 
+5. Click "Save". | An error message "Unable to add the data" appears.
+
+Test Case#4
+Test Name: Can create a user with a very long name with no spaces without change in the table's margins. 
+Priority: 3
+Component: Add User
+Description: To verify a user with a very long name containing no spaces can be created without this to result in change in the table's margins.
+Steps:
+1. Log into Identysoft. | A Welcome message is displayed on the right.
+2. Click on Structure setup->Locations from the menu on the right.| A list of users is visible.
+3. Click on the "+Add".| A field for entering Name appears.
+4. Type "VeryLong" 21 times with no spaces into the Name field. 
+5. Click "Save". | A validation message "The data has been saved" shows up in green.
+6. Click "Back". | The newly created "VeryLond" data is visible on two rows and there is no change in the table's margins.
+
+Test Case#5
+Test Name: Can't create duplicate data.
+Priority: 3
+Component: Add Data
+Description: To verify duplicate data can't be created.
+Steps:
+1. Log into Identysoft. | A Welcome message is displayed on the right.
+2. Click on Camera->Configuration from the menu on the right.| A list of users is visible.
+3. Click on the "+Add".| Two fields appear - for Name and for Url.
+4. Type "test" in the Name field.
+5. Type "http://pragmatic.bg" in the Url field.
+6. Click "Save". | A validation message "The data has been saved" is visible.
+7. Click "Save" again. | No change in message.
+8. Repeat steps 3,4,5 and click "Save" | An error message for duplicate data appears in red.

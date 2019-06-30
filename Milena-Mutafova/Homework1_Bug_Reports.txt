@@ -1,0 +1,137 @@
+Bug #1
+Title: User can be created using only spaces for name. 
+Severity: 3
+Priority: 3
+Environment: Google Chrome - Version 75.0.3770.100
+Expected Result: Error when trying to create user with only spaces for name.
+Actual Result:The system lets you create the user.
+Steps to reproduce:
+1. Login into Pragmatic.
+2. Click on Users tab on the left | Opens all users on the right.
+3. Click on "Add" button | Opens a form for entering a new user's name.
+4. Enter only spaces in the "Name" field and click Save.
+5. Error message should appear.
+
+Bug #2
+Title: No error message for restricted characters such as bold tag when creating new data in Locations.
+Severity: 3
+Priority: 3
+Environment: Google Chrome - Version 75.0.3770.100
+Expected Result: Error message "Name can contain only lowercase/uppercase letters, -,_,: or space characters"
+Actual Result: Able to create new data using restricted characters "<b> and </b>" in Locations under Structrures setup tab.
+Steps to reproduce:
+1. Login into Pragmatic.
+2. Navigate to "Structrures setup" tab on the left. |A dropdown menu is visible.
+3. Click on "Locations" | Existing locations are visible.
+4. Click "Add" and type "<b> Alex" into the Name field.
+5. Click save | A message "The data has been saved" is shown. 
+
+Bug #3
+Title: Context table at Locations goes out of margins when Name is too long.
+Severity: 3
+Priority: 3
+Environment: Google Chrome - Version 75.0.3770.100
+Expected Result: No change in the size of the table, when creating data with very long name.
+Actual Result: The Name table pushes out the following ones out of the page's normal margins.
+Steps to reproduce:
+1. Login into Pragmatic.
+2. Navigate to "Structrures setup" tab on the left. |A dropdown menu is visible.
+3. Click on "Locations" | Existing locations are visible.
+4. Click "Add" and type "VeryLong" 21 times with no spaces into the Name field.
+5. Click "Save".
+6. Click "Back".
+7. The margins of the tables are mixed up and go out of the expected frame.
+
+Bug #4
+Title: Created duplicate data with no error message.
+Severity: 2	
+Priority: 2
+Environment: Google Chrome - Version 75.0.3770.100
+Expected Result: Error message when trying to create duplicate data.
+Actual Result: No error message when trying to create duplicate data.
+Steps to reproduce:
+1. Login into Pragmatic.
+2. Navigate to Camera -> Configuration on the left.
+3. Enter "test" in Name field.
+4. Enter http://pragmtaic.bg in Url field.
+5. Click "Save"
+6. A message "Your data has been saved".
+7. Click "Back" | This navigates to the existing data.
+8. Click "Add".
+9. Repeat steps 3,4 and 5.
+10. A message "Your data has been saved" again, even with the same data.
+
+Pet Clinic
+Bug#1
+Title: A pet can be created with only spaces as name.
+Severity:3
+Priority:3
+Environment: Google Chrome - Version 75.0.3770.100
+Expected Result: Error when trying to create a new pet with only spaces as name.
+Actual Result: No error and the pet is created with spaces as name.
+Steps to reproduce:
+1. Navigate to Pet Clinic app.
+2. Click on "Find owners"
+3. Type the letter "k" and choose the found owner.
+4. Click "Add New Pet" button. 
+5. Type in some spaces in the Name field.
+6. Choose date 2019/06/11.
+7. Choose type Cat.
+8. Click "Add pet" button.
+9. No error message is displayed and the new pet data is added.
+
+Pet Clinic
+Bug#2
+Title: Adding a new pet with birth date in the future without a problem.
+Severity:3
+Priority:3
+Environment: Google Chrome - Version 75.0.3770.100
+Expected Result: Error when trying to add a new pet with birth date in the future.
+Actual Result: No error and the pet is created with a birth date in the future.
+Steps to reproduce:
+1. Navigate to Pet Clinic app. 
+2. Click on "Find owners"
+3. Type the letter "k" and choose the found owner.
+4. Click "Add New Pet" button. 
+5. Type in some name in the Name field.
+6. Choose date 2019/06/30.
+7. Choose type hamser.
+8. Click "Add pet" button.
+9. No error message is displayed and the new pet data is added.
+
+
+Pet Clinic
+Bug#3
+Title: Added new visit with spaces for description without getting any error.
+Severity:3
+Priority:3
+Environment: Google Chrome - Version 75.0.3770.100
+Expected Result: Error when trying to add a new visit with only spaces for description.
+Actual Result: No error and the new visit is added without any error message.
+Steps to reproduce:
+1. Navigate to Pet Clinic app. 
+2. Click on "Find owners"
+3. Type the letter "k" and choose the found owner.
+4. Click "Add Visit" button. 
+5. Choose date 2019/06/30.
+7. Type in only spaces in the description field.
+8. Click the "Add visit" button.
+9. No error message is displayed and the new visit data is added.
+
+Pet Clinic
+Bug#4
+Title: Added new visit with a date in the past.
+Severity:3
+Priority:3
+Environment: Google Chrome - Version 75.0.3770.100
+Expected Result: Error when trying to add a new visit in the past.
+Actual Result: No error and the new visit is added without any error message.
+Steps to reproduce:
+1. Navigate to Pet Clinic app. 
+2. Click on "Find owners"
+3. Type the letter "k" and choose the found owner.
+4. Click "Add Visit" button. 
+5. Choose date 2019/06/01.
+7. Type in some desctiption in the description field.
+8. Click "Add visit" button.
+9. No error message is displayed and the new visit data in the past is added.
