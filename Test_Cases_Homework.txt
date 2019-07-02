@@ -1,0 +1,95 @@
+Video 1010
+
+Test Name: Adding a new Group in Users
+Priority: 2
+Component: Users Functionality
+Description: To check that new Group can be created in Users
+Steps:
+1. Start any browser.
+2. Sign in to Identysoft with valid username and password. User is redirected to Homepage.
+3. Navigate to left page panel. Click on users. Choose Groups from the dropdown menu. When the page loads, click on Add to add a new group. 
+4. Enter string and click Save. 
+5. After message "Your data has been saved" appears check if the new Group has been added. 
+
+Test Name: Adding a duplicate Group in Users
+Priority: 2
+Component: Users Functionality
+Description: To check if duplicate Group can be created in Users
+Steps:
+1. Start any browser.
+2. Sign in to Identysoft with valid username and password. User is redirected to Homepage.
+3. Navigate to left page panel. Click on users. Choose Groups from the dropdown menu. When the page loads, click on Add to add a new group. 
+4. Enter string and click Save. 
+5. Repeat steps 3 and 4 with the same exact data. The system should not allow a duplicate value to be added. 
+
+Test Name: Checking if the text criteria of Group name accepts spaces 
+Priority: 2
+Component: Users Functionality
+Description: To check if Group name can accept spaces 
+Steps:
+1. Start any browser.
+2. Sign in to Identysoft with valid username and password. User is redirected to Homepage.
+3. Navigate to left page panel. Click on users. Choose Groups from the dropdown menu. When the page loads, click on Add to add a new group. 
+4. Enter string with a space between text and click Save. 
+5. After message "Your data has been saved" appears check if the new Group has been added. 
+
+Test Name: Checking if the text criteria of Group name accepts spaces only
+Priority: 2
+Component: Users Functionality
+Description: To check if Group name can accept spaces 
+Steps:
+1. Start any browser.
+2. Sign in to Identysoft with valid username and password. User is redirected to Homepage.
+3. Navigate to left page panel. Click on Users. Choose Groups from the dropdown menu. When the page loads, click on Add to add a new group. 
+4. Enter spaces only and click Save. 
+5. After message "Your data has been saved" appears check if the new Group has been added. 
+
+Video 1012
+
+Test Name: Checking if the text criteria of Group name accepts special characters
+Priority: 2
+Component: Users Functionality
+Description: To check if Group name can accept and recognise special characters
+Steps:
+1. Start any browser.
+2. Sign in to Identysoft with valid username and password. User is redirected to Homepage.
+3. Navigate to left page panel. Click on users. Choose Groups from the dropdown menu. When the page loads, click on Add to add a new group. 
+4. Enter special character, some text, another special character and click on Save button. System should not allow the addition of a new Group name containing special characters. 
+
+Video 1012
+
+Test Name: Checking if the text criteria of Locations name accepts special characters
+Priority: 2
+Component: Structures Setup Functionality
+Description: To check if Locations name can accept and recognise special characters
+Steps:
+1. Start any browser.
+2. Sign in to Identysoft with valid username and password. User is redirected to Homepage.
+3. Navigate to left page panel. Click on Setup Functionality. Choose Locations from the dropdown menu. When the page loads, click on Add to add a new Location. 
+4. Enter special character, some text, another special character and click on Save button. After "Your data has been saved" message check if new location has been added. 
+5. Check if the special characters are recognised and displayed by the system. Special characters should be visible in the new Location name. 
+
+Screenshot
+
+Test Name: Checking the accepted string lenght when adding new Locations Name
+Priority: 2
+Component: Structures Setup Functionality
+Description: To check how a new Locations Name created from a very long String appears
+1. Start any browser.
+2. Sign in to Identysoft with valid username and password. User is redirected to Homepage.
+3. Navigate to left page panel. Click on Setup Functionality. Choose Locations from the dropdown menu. When the page loads, click on Add to add a new Location. 
+4. Enter a longer than 170 letter string and click Save.
+5. After "Your data has been saved" message check if new location has been added and how it appears. 
+
+
+Video 1023
+
+Test Name: Check if duplicate entries are accepted in Camera Configuration
+Priority: 2
+Component: Camera Functionality
+Description: To check if duplicate entries are accepted in Camera Configuration
+Steps: 
+1. User starts any browser.
+2. User signs in to Identysoft with valid username and password. User is redirected to Homepage.
+3. Navigate to left page panel. Click on Camera and choose Configuration. Enter "test" as Name and "http://pragmatic.bg" as URL. Click Save. After message The data has been saved" click back. Check if new entry has been added. 
+4. Repeat step 4 with exact same data. Check if duplicate entries exist. 
