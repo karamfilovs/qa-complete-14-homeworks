@@ -1,0 +1,71 @@
+
+Video 1010
+Title: User can add a new Group name with spaces only	
+Severity: 3 
+Priority: 2 
+Environment: Chrome/Firefox/IE / is not browser specific
+Expected Result: Group name must not be empty and include letters and/or numbers
+Actual Result: Group name can contain only blank spaces and no letters or numbers
+Steps to reproduce:
+1. Sign in to Identysoft 
+2. Click on Users from the left panel and choose Groups from the dropdown menu
+3. Click on Add button and then enter spaces only in Name field
+4. Click Save and then Back- the new empty name appears in records
+
+Video 1012
+Title: Special characters are not accepted in Group Name
+Severity: 3
+Priority: 2
+Environment: Chrome/Firefox/IE/ is not browser specific
+Expected Result: Group name can include Special characters
+Actual Result: Group name can`t include Special characters
+Steps to reproduce:
+1. Sign in to Identysoft 
+2. Click on Users from the left panel and choose Groups from the dropdown menu
+3. Click on Add button and then enter Special characters and text in Name field
+4. Click Save - the Name field does not accept special characters and the name cannot be saved. 
+
+
+Title: Special characters and text in special characters are not told apart by Locations Name
+Severity: 2
+Priority: 2
+Environment: Chrome/Firefox/IE/ is not browser specific
+Expected Result: Special characters could be added in Locations Name Field and are told apart
+Actual Result: Special characters could be added in Locations Name Field, however are not told apart
+Steps to reproduce:
+1. Sign in to Identysoft 
+2. Go to Structures setup and choose Locations
+3. Enter Special characters and text in Name field
+4. Click Save. After the message "Data has been saved" choose Locations from the Structures setup. The new Location has been added to records, but it`s name appears with letters only, without the special characters
+
+
+Screenshot
+Title: Locations Name can accept a really long string which can lead to breakage of the Page SCC
+Severity: 2
+Priority: 2
+Environment: Chrome/Firefox/IE/ is not browser specific
+Expected Result: When Locations Name contains too many symbols it should continue on next row or ...should appear after the 150 character
+Actual Result: When Locations Name contains too many symbols instead of continuing on next row or ... appearing after 150 character it breaks page CSS
+Steps to reproduce:
+1. Sign in to Identysoft 
+2. Go to Structures setup and choose Locations
+3. Enter an over 170 characters string in Name field
+4. Click Save. After the message "Data has been saved" choose Locations from the Structures setup. The new Location breaks the Page SCC
+
+Title: SCANNERS / Name column is not alligned- broken Page CSS, 
+string without a space- ne prenasq na dr redove
+Expected Result: prenasq se na nov red ili ostava mnogoto4ie sled opr broi bukvi
+Actual Result: ne se prenasq, 4upi CSS-a na stranicata 
+
+Video 1023
+Title: User can create duplicating rows in Camera/Configuration
+Severity: 3 
+Priority: 2
+Environment: Chrome/Firefox/IE/ is not browser specific
+Expected Result: 
+Actual Result: 
+Steps to reproduce:
+1. Sign in to Identysoft 
+2. Go to Camera from the left panel and choose Configuration. When "Add" appears, enter text in Name and URL in Url, click Save.
+3. After the message "The data has been saved" click on Back button. Repeat step 2 and by filling in the exact data.
+4. After the message "The data has been saved" click on Back button. The duplicates appear with different IDs but same data. 
